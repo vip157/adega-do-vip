@@ -1,15 +1,61 @@
+*<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>blog</title>
+<style>
+header{
+background-color:#C1DFFF;
+color:#000000;
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        
-        <h1>Meu blog tech</h1>
-        <p>Vou compartilhar conhecimentos sobre tecnologia e 
-        programação</p>
-</body>
+main{
+background-color:#FFFFFF;
+color:#1c256e;
+max-width: 800px;
+margin: 0 auto;
+padding: 16px;
+display: flex;
+}
+img{
+width: 80px;
+height: 80px;
+
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1> meu blog sobre educação</h1>
+<p>mostra sobre educação e curiosidades</p>
+</header>
+<main>
+<img src="imagem-blog.png" alt=" "DIRETO AO PONTO">
+<div>
+<h2>Meu preimeiro post</h2>
+<p>Por elias</p>
+<p>Boas vindas ao meu site!
+aqui vou compartilhar dicas
+sobre carros e curiosidades sobre a area. </p>
+<button>❤️ <span>0</span></button>
+<div>
+
+</main>
+<body>
+<script>
+const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+
+function botaoCLicado(){
+console.log("fui clicado");
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+
+</script>
 </html>
